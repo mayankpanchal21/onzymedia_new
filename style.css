@@ -288,8 +288,8 @@ h1 {
   scroll-snap-type: x mandatory;
   padding: 2rem 0;
   scrollbar-width: none;
-  
 }
+
 
 .work-slider::-webkit-scrollbar {
   display: none;
@@ -305,7 +305,7 @@ h1 {
   cursor: pointer;
   transition: transform 0.3s;
   border: 2px solid var(--card-border);
-  animation: scroll 12s linear infinite;
+  animation: scroll 10s linear infinite;
 }
 
 .work-card:hover {
@@ -547,11 +547,14 @@ h1 {
 .testimonials-slider {
   display: flex;
   gap: 2rem;
-  animation: testimonialScroll 18s linear infinite;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none;
 }
 
 .testimonials-slider:hover {
   animation-play-state: paused;
+  
 }
 
 @keyframes testimonialScroll {
@@ -571,6 +574,10 @@ h1 {
   padding: 2rem;
   transition: all 0.3s;
   flex-shrink: 0;
+  scroll-snap-align: start;
+  cursor: pointer;
+  animation: testimonialScroll 15s linear infinite;
+
 }
 
 .testimonial-card:hover {
