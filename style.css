@@ -60,7 +60,7 @@ nav {
 
 .logo {
   font-size: 1.5rem;
-  font-weight: bold;
+  /* font-weight: bold; */
   letter-spacing: 2px;
 }
 
@@ -123,6 +123,7 @@ h1 {
   margin-bottom: 1rem;
   line-height: 1.2;
   animation: fadeIn 0.8s ease 0.4s both;
+  text-transform: capitalize;
 }
 
 .wavy-underline {
@@ -250,7 +251,7 @@ h1 {
 .brands-slider {
   display: flex;
   gap: 4rem;
-  animation: scroll 30s linear infinite;
+  animation: scroll 12s linear infinite;
 }
 
 .brand-logo {
@@ -283,10 +284,11 @@ h1 {
 .work-slider {
   display: flex;
   gap: 2rem;
-  overflow-x: auto;
+  /* overflow-x: hidden; */
   scroll-snap-type: x mandatory;
   padding: 2rem 0;
   scrollbar-width: none;
+  animation: scroll 12s linear infinite;
 }
 
 .work-slider::-webkit-scrollbar {
